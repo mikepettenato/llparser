@@ -1,2 +1,1 @@
-# llparser
-Final Project for CS421
+# monadic-llparser

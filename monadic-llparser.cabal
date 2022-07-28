@@ -1,0 +1,73 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           monadic-llparser
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/monadic-llparser#readme>
+homepage:       https://github.com/githubuser/monadic-llparser#readme
+bug-reports:    https://github.com/githubuser/monadic-llparser/issues
+author:         Michael Pettenato
+maintainer:     mp34@illinois.edy
+copyright:      2022 Michael Pettenato
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/monadic-llparser
+
+library
+  exposed-modules:
+      Parser
+  other-modules:
+      Lib
+      Paths_monadic_llparser
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , mtl
+    , unordered-containers >=0.2
+  default-language: Haskell2010
+
+executable monadic-llparser-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_monadic_llparser
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , monadic-llparser
+    , mtl
+    , unordered-containers >=0.2
+  default-language: Haskell2010
+
+test-suite monadic-llparser-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_monadic_llparser
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      HUnit >=1.5
+    , QuickCheck >=2.9.0
+    , base >=4.7 && <5
+    , monadic-llparser
+    , mtl
+    , quickcheck-io
+    , tasty
+    , tasty-hunit
+    , tasty-quickcheck
+    , unordered-containers >=0.2
+  default-language: Haskell2010
