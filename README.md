@@ -11,6 +11,9 @@ The intention of the project was to implement a parser inspired by the following
 
 * [https://www.cs.nott.ac.uk/~pszgmh/pearl.pdf](https://www.cs.nott.ac.uk/~pszgmh/pearl.pdf)
 
+Note: There is a copy at the root of this project to the paper, linked below:
+* [pearl.pdf](/pearl.pdf)
+
 Where combinators and parsing components could be built and then used to build more expressive LL grammars as needed.
 
 The goal of the project was to support the following grammar
