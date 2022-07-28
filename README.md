@@ -208,3 +208,6 @@ The following are the cli commands that can be used:
 * stack test - used to run the tests associated with the project
 
 The tests are implemented using the HUnit framework.  There are **30 tests **that will run when ‘stack test’ is executed.  These tests are designed to test all of the different parsers that were built for this project.  Please refer to the test/Spec.hs file for a full review of the tests that have been implemented for this project.
+
+## Citation
+This project was based largely on the “FUNCTIONAL PEARLS Monadic Parsing in Haskell” paper, written by Graham Hutton, University of Nottingham. and Erik Meijer, University of Utrecht.
